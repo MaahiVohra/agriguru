@@ -1,0 +1,44 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(36, 255, 0, 0.05);
+    font-family: "Montserrat", sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    background-color: white;
+    height: 4em;
+    position: fixed;
+}
+
+.mypickups{
+    background-color: white;
+    margin: 1em 0;
+    min-height: 90vh;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+.main-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0.5em;
+}
+
+.main-heading > span{
+    color: rgba(19, 139, 0, 1);
+}
+
+.headings{
+    font-weight: bold;
+}
+
+.content{
+    margin-top: 1em;
+}

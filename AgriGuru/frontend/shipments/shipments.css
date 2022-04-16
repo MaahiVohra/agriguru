@@ -1,0 +1,147 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(36, 255, 0, 0.05);
+    font-family: "Montserrat", sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    background-color: white;
+    height: 4em;
+    position: fixed;
+}
+
+.shipments-container{
+    background-color: white;
+    margin: 1em 0;
+    min-height: 90vh;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+.main-heading{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.5em;
+}
+
+.main-heading > span{
+    color: rgba(19, 139, 0, 1);
+}
+
+.headings{
+    font-weight: bold;
+}
+
+
+.date{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.shipment-item{
+    margin-top: 2em;
+}
+
+.item-name{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1em;
+    max-height: 20em;
+    max-width: 15em;
+    text-align: left;
+}
+
+.item-image{
+    max-height: 15em;
+    max-width: 15em;
+}
+
+.item-image > img{
+    border-radius: 10px;
+}
+
+.rating > i {
+    color: #FFC300;
+}
+
+.item-details{
+    background-color: rgba(68, 226, 65, 0.1);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin: 3em 1em 0 1em;
+    padding: 2em;
+    height: 22em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+@media only screen and (max-width: 870px){
+    .item-details{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .rating > i{
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 380px){
+    .rating > i{
+        font-size: 0.7rem;
+    }
+    .main-heading{
+        font-size: 2rem;
+    }
+}
